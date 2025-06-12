@@ -21,9 +21,9 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh' 
             }
         }
-        stage('Poll SCM') { 
+        stage('Multi Branch Build') { 
             steps {
-                echo "Hello from Poll SCM stage" 
+                echo "Hello from Multi Branch Build stage" 
             }
         }
     }
